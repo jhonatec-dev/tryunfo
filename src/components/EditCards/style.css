@@ -1,0 +1,25 @@
+.section__cards {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.section__cards > div {
+  display: flex;
+  flex-direction: column;
+  transform: scale(0.8);
+  transition: 0.5s;
+}
+
+.section__cards > div:hover {
+  transform: scale(1);
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}

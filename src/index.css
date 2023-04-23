@@ -1,0 +1,76 @@
+@import url('https://fonts.cdnfonts.com/css/eva-2');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-color: #4d4d4d #171717;
+}
+
+body {
+  font-family: Eva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+html::before {
+  content: '';
+  background-image: url('./media/images/noise-background.png');
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: .1;
+  z-index: -1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.section__create-card{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  row-gap: 30px;
+  max-width: 800px;
+  margin: 20px auto;
+  margin-bottom: 40px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #383838, #252424);
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4d4d4d;
+}
+
+/* Hidden */
+.div__hidden{
+  /* position: absolute; */
+  width: 100%;
+  /* background: #171717; */
+  padding: 20px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.div__hidden textarea{
+  font-size: larger;
+  height: 200px;
+  padding: 10px;
+}

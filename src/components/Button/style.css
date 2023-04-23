@@ -1,0 +1,49 @@
+.Button {
+  background: linear-gradient(#ba8d59, #eed9ba);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px black;
+  color: rgba(37, 37, 37, 0.876);
+  filter: hue-rotate(0deg);
+  font-size: larger;
+  font-weight: 700;
+  margin: 10px;
+  padding: 6px 24px;
+  transition: 0.5s;
+}
+
+.back__button {
+  left: 0;
+  margin: 15px;
+  position: absolute;
+  top: 0;
+}
+
+.Button:disabled {
+  background: gray;
+  color: rgb(82, 82, 82);
+  pointer-events: none;
+}
+
+.Button:hover {
+  animation: backgroundRotate 2s infinite linear;
+
+  /* background: radial-gradient(#ba8d59, rgba(0, 0, 0, 0.9)); */
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.Button:active {
+  animation: none;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.359), #ba8d59);
+  border: 1px solid rgba(255, 255, 255, 0.51);
+
+}
+
+
+@keyframes backgroundRotate {
+
+  0% { filter: hue-rotate(0deg);}
+
+  100% { filter: hue-rotate(360deg);}
+
+}

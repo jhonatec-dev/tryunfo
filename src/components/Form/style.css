@@ -1,0 +1,46 @@
+.Form {
+  align-items: center;
+  animation: shadowMove 3s linear infinite alternate;
+  background-color: #282828;
+  border: 2px solid #ba8d59;
+  border-radius: 4px;
+  box-shadow: 8px 8px 8px black;
+  display: flex;
+  flex-direction: column;
+  outline: 8px solid #282828;
+  padding: 8px;
+  row-gap: 12px;
+  width: 400px;
+}
+
+.form__title {
+  text-align: left;
+  width: 100%;
+}
+
+.hasTrunfo {
+  text-align: end;
+  width: 200px;
+}
+
+.atributos {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.atributos label {
+  margin: 0 4px;
+  text-align: right;
+}
+
+@keyframes shadowMove {
+
+  from { box-shadow: 18px 18px 20px rgba(0, 0, 0, 0.7);
+  }
+
+  to { box-shadow: -18px 18px 20px rgba(0, 0, 0, 0.7);
+  }
+}

@@ -1,0 +1,144 @@
+.Card {
+  align-items: center;
+  background-color: #282828;
+  border: 5px solid transparent;
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 420px;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.Card__container {
+  animation: shadowMoveCard 3s linear infinite alternate;
+  background: linear-gradient(#ba8d59, #eed9ba);
+  border-radius: 4px;
+  box-shadow: 10px 10px 8px black;
+  outline: 8px solid #282828;
+  overflow: hidden;
+  padding: 2px;
+  transition: all 0.5s;
+  width: 250px;
+}
+
+.Card__img {
+  pointer-events: none;
+  width: 200px;
+  z-index: 4;
+}
+
+.logo {
+  animation: balanceGame 5s infinite ease-in-out;
+  pointer-events: none;
+  position: absolute;
+  top: -20px;
+  width: 100px;
+}
+
+.img_trunfo {
+  bottom: -20px;
+  pointer-events: none;
+  position: absolute;
+  right: -10px;
+  width: 50px;
+  z-index: 0;
+}
+
+.trunfo-text {
+  bottom: 0;
+  color: #ba8d59;
+  font-weight: 700;
+  left: 0;
+  margin: 4px;
+  position: absolute;
+}
+
+.aviso {
+  margin-top: 120px;
+}
+
+.Card__container:hover {
+  animation: shadowMove_rotateHue 3s linear infinite alternate;
+}
+
+.delete-button {
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: larger;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  transition: 0.4s;
+  width: 30px;
+}
+
+.delete-button:hover {
+  background-color: #ba8d59;
+  transform: scale(1.2) translateY(-5px);
+
+}
+
+.rare-card {
+  font-size: large;
+  text-transform: capitalize;
+}
+
+.raro {
+  color: #ba8d59;
+}
+
+.muitoraro {
+  color: #ba8d59;
+  font-size: larger;
+}
+
+.muitoraro:after, .muitoraro:before {
+  content: ' --- ';
+  letter-spacing: -2px;
+  word-spacing: 2px;
+}
+
+.attr:hover {
+  color: #ba8d59;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+@keyframes shadowMoveCard {
+
+  from { box-shadow: 18px 18px 20px rgba(0, 0, 0, 0.7);
+    transform: perspective(1000px) rotateY(-10deg);}
+
+  to { box-shadow: -18px 18px 20px rgba(0, 0, 0, 0.7);
+    transform: perspective(1000px) rotateY(10deg);}
+}
+
+@keyframes shadowMove_rotateHue {
+
+  from { box-shadow: 18px 18px 20px rgba(0, 0, 0, 0.7);
+    filter: hue-rotate(0deg);
+    transform: perspective(1000px) rotateY(-10deg);}
+
+  to { box-shadow: -18px 18px 20px rgba(0, 0, 0, 0.7);
+    filter: hue-rotate(360deg);
+    transform: perspective(1000px) rotateY(10deg);}
+}
+
+@keyframes balanceGame {
+
+  0%, 100% {
+    transform: translate(80px) rotate(-30deg);
+  }
+
+  50% {
+    transform: translate(-80px) rotate(30deg);
+  }
+}

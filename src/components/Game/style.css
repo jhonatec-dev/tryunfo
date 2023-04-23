@@ -1,0 +1,73 @@
+.section__game {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  row-gap: 12px;
+
+  /* width: 100%; */
+}
+
+.section__game--pts {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.section__game--cards {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.pts {
+  color: #ba8d59;
+}
+
+.regras, .section__game--over {
+  background: #282828;
+  border: 2px solid #ba8d59;
+  border-radius: 8px;
+  box-shadow: 8px 8px 8px black;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  margin-bottom: 12px;
+  outline: 8px solid #282828;
+  padding: 20px;
+  row-gap: 8px;
+  text-align: center;
+
+}
+
+.section__game--over {
+  box-shadow: 8px 8px 80px black;
+  max-width: 70%;
+  position: fixed;
+  top: calc(50% - 100px);
+}
+
+@media screen and ( min-width : 500px ) {
+
+  .section__game--cards {
+    justify-content: space-around;
+    padding: 12px 20px;
+  }
+
+  .section__game--pts {
+    justify-content: space-around;
+    padding: 12px 20px;
+  }
+
+  .section__game--over {
+    top: calc(50% - 100px);
+    width: 300px;
+  }
+
+}

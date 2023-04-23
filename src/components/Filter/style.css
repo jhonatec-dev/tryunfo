@@ -1,0 +1,23 @@
+.Filter {
+  align-items: center;
+  background: #1d1d1d;
+  background-color: #282828;
+  border: 2px solid #ba8d59;
+  border-radius: 20px;
+  box-shadow: 8px 8px 8px black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+  margin: 0 16px;
+  outline: 8px solid #282828;
+  padding: 10px 20px;
+  width: fit-content;
+}
+
+@media screen and ( min-width : 560px ) {
+
+  .Filter {
+    margin: 0 auto;
+  }
+}

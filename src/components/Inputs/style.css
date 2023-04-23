@@ -1,0 +1,38 @@
+.container__input {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.number {
+  font-size: large;
+  font-weight: 600;
+  text-align: center;
+  width: 50px;
+}
+
+textarea, input, select {
+  background-color: #282828;
+  border: 1px solid #ba8d59;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.8rem;
+  padding: 4px;
+  width: 100%;
+}
+
+.checkbox {
+  filter: invert(85%);
+  height: 20px;
+  width: 20px;
+}
+
+select {
+  text-transform: capitalize;
+  width: 100px;
+}
+
+label {
+  font-weight: 700;
+}
+

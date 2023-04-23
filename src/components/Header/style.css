@@ -1,0 +1,30 @@
+.Header {
+  margin-left: 150px;
+  margin-top: 4px;
+  padding: 12px;
+  right: 0;
+  text-align: end;
+}
+
+.Header h1 {
+  font-size: 2.3em;
+}
+
+.Header h5 {
+  position: absolute;
+  right: 12px;
+  transition: 0.4s;
+}
+
+.Header h5:hover {
+  font-size: large;
+}
+
+.Header a {
+  color: white;
+  text-decoration: none;
+}
+
+.Header a:hover {
+  color: #ba8d59;
+}
