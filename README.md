@@ -6,6 +6,8 @@ Dream-based Super Trump game
 
 <img src="./print.png" alt="App print" />
 
+<img src="./print2.png" alt="App print" />
+
 # Functionalities
 - Play based on an attribute of the drawn card
 - Add/Remove cards to deck
@@ -23,6 +25,7 @@ Dream-based Super Trump game
 - LocalStorage
 - CSS
   - Mobile/Desktop
+  - Animations
 - MidJourney in image generation
 
 # Changelog
